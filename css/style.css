@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Boots and Spurs' ;
+    src: url("../fonts/Boots\ and\ Spurs\ Font.ttf");
+}
+
+.logo, 
+h1 {
+    font-family: 'Boots and Spurs', sans-serif;
+}

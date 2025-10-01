@@ -3,7 +3,52 @@
     src: url("../fonts/Boots\ and\ Spurs\ Font.ttf");
 }
 
-.logo, 
-h1 {
+.logo {
     font-family: 'Boots and Spurs', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 550;
+    color: #fff;
+    text-decoration: none;
+}
+
+header,
+footer {
+    background: #202020;
+    color: #fff;
+}
+
+.reviews {
+    background: #e8e8e8;
+}
+
+.product {
+    background: #ca1010;
+    color: #fff;
+}
+
+.sale {
+    background: #1bba1b;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
 }

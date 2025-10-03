@@ -75,7 +75,6 @@ footer {
 
 
 /* Home page */
-
 .welcome {
     background: url(../images/guitarkings-img.jpg) no-repeat;
     background-size: cover;
@@ -94,4 +93,20 @@ footer {
 
 .reviews {
     background: #e8e8e8;
+}
+
+
+
+/* Contact page */
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+}
+.submit_button {
+    color: #fff;
+    background: #ca1010;
+    border: none;
+    outline: none;
 }

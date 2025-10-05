@@ -4,8 +4,6 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -22,17 +20,22 @@ header {
     margin-left: 10px;
 }
 
-
+/* Links*/
 nav li {
     display: inline-block;
     padding: 10px;
 }
 
+/* Links*/
 nav .links {
     font-size: 17.5px;
     font-weight: 550;
     color: #fff;
     text-decoration: none;
+}
+
+.links.home, .links.guitars, .links.contact {
+    text-decoration: underline;
 }
 
 
@@ -55,6 +58,16 @@ h1, h2{
 .product {
     background: #ca1010;
     color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border-radius: 5px;
+}
+
+.cta-small {
+    padding: 8px 30px;
+    font-size: 0.8rem;
 }
 
 .sale {

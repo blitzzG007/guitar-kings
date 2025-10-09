@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 header {
@@ -94,6 +95,14 @@ footer {
     background-position-x: right;
     background-position-y: bottom;
     min-height: 70vh;
+    position: relative;
+}
+
+.welcome_content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
 }
 
 .selling-points_image{

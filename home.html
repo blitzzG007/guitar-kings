@@ -26,35 +26,39 @@
                <a href="guitars.html" class="product">View Guitars</a>
             </div>
         </section>
-        <section class="selling-points">
+        <section class="selling-points">   <!--This is a parent container-->
             <div>
                 <h2>Our Guitars are:</h2>
                 <ul>
-                  <li>Made with real Pennsylvania wood</li>
-                  <li>Crafted by a family-run business</li>
+                  <li>Made with real Pennsylvania wood</li>      <!--This h2, ul is a child element-->
+                  <li>Crafted by a family-run business</li>       <!--This li is a grandchild element and is the child element of the ul-->
                   <li>Built to last a liftime</li>
                   <li>Beautiful unique</li>
                   <li>Option for music lovers</li>
                 </ul>
             </div>
-            <img src="images/Hands on guitar.jpg" alt="Hands strumming guitar" class="selling-points_image">
+            <div>
+                <img src="images/Hands on guitar.jpg" alt="Hands strumming guitar" class="selling-points_image">
+            </div>
         </section>
 
         <section class="reviews">
             <h3>Reviews</h3>
-            <div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse quis dictum elit. In hac habitasse platea dictumst."
-                <span class="author">- Bob Willis</span></p>
-                <img src="images/review bio1.jpg" alt="Bob Willis author of the quote" class="review-image">
-            </div>
-
-            <div>
-                <p>"Maecenas interdum, erat nec pulvinar euismod, eros erat
-                ornare mauris, commodo vestibulum odio nunc id urna. Sed
-                volutpat consequat dolor, nec sollicitudin elit eleifend vitae."
-                <span class="author">- Sally Oldfield</span></p>
-                <img src="images/review bio2.jpg" alt="Sally Oldfield playing guitar" class="review-image">
+            <div class="reviews-content">
+               <div>
+                   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                   Suspendisse quis dictum elit. In hac habitasse platea dictumst."
+                   <span class="author">- Bob Willis</span></p>
+                   <img src="images/review bio1.jpg" alt="Bob Willis author of the quote" class="review-image">
+               </div>
+   
+               <div>
+                   <p>"Maecenas interdum, erat nec pulvinar euismod, eros erat
+                   ornare mauris, commodo vestibulum odio nunc id urna. Sed
+                   volutpat consequat dolor, nec sollicitudin elit eleifend vitae."
+                   <span class="author">- Sally Oldfield</span></p>
+                   <img src="images/review bio2.jpg" alt="Sally Oldfield playing guitar" class="review-image">
+               </div>
             </div>
         </section>
 

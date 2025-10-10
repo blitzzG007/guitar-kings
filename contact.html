@@ -19,34 +19,35 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Contact</h1>
-        </section>
-        <section>
-            <form method="POST">
-                <label for="name">Full Name:</label>
-                <input type="text" name="name" id="name" class="form_input">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" class="form input">
+    <main class="contact">
+        <h1>Contact</h1>
+        <form method="POST">
+            <div class="form-wrapper">
+                <section>
+                  <label for="name">Full Name:</label>
+                  <input type="text" name="name" id="name" class="form_input">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" class="form input">
 
-                <label for="guitar">Guitar</label>
-                <select name="guitar" id="guitar">
-                    <option value="Adinrondack Red">Adinrondack Red</option>
-                    <option value="Adinrondack Blue">Adinrondack Blue</option>
-                    <option value="Adinrondack Green">Adinrondack Green</option>
-                    <option value="Adinrondack Yellow">Adinrondack Yellow</option>
-                </select>
-
-                <input type="checkbox" name="email-updates" id="email-updates">
-                <label for="email-updates">Sign up for email up dates.</label>
-                
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-
-                <input type="submit" value="Send Now" class="submit_button">
-            </form>
-        </section>
+                  <label for="guitar">Guitar</label>
+                  <select name="guitar" id="guitar">
+                      <option value="Adinrondack Red">Adinrondack Red</option>
+                      <option value="Adinrondack Blue">Adinrondack Blue</option>
+                      <option value="Adinrondack Green">Adinrondack Green</option>
+                      <option value="Adinrondack Yellow">Adinrondack Yellow</option>
+                  </select>
+                  <div>
+                    <input type="checkbox" name="email-updates" id="email-updates">
+                    <label for="email-updates">Sign up for email up dates.</label>
+                  </div>
+                </section>
+                <section>
+                  <label for="message" class="message">Message:</label>
+                  <textarea name="message" id="message"></textarea>
+                </section>
+            </div>
+            <input type="submit" value="Send Now" class="submit_button">
+         </form>
     </main>
     <footer>Guitar Kings &copy;</footer>
 </body>

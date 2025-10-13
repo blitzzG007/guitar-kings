@@ -50,12 +50,6 @@ h1, h2{
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
-.featured-products {
-    background: #fbfbfb;
-}
-
 .product {
     background: #ca1010;
     color: #fff;
@@ -69,6 +63,8 @@ h1, h2{
 .cta-small {
     padding: 8px 30px;
     font-size: 0.8rem;
+    grid-row: 2;
+    grid-column: 2;
 }
 
 .sale {
@@ -168,26 +164,21 @@ footer {
     gap: 20px;
 }
 
-.featured-products img{
+.featured-products {
+    background: #fbfbfb;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.featured-products h3, 
+.featured-products p {
+    grid-column: 1;
+}
+
+.featured-products img {
     width: 100%;
-}
-
-@media (max-width: 820px) {
-    .featured-list {
-        margin:  50px;
-    }
-    .featured {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .featured-list {
-        margin:  50px;
-    }
-    .featured {
-        grid-template-columns: 1fr 1fr;
-    }
+    grid-column: -1/1;
 }
 
 /* Guitars page */

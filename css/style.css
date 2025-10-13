@@ -50,7 +50,7 @@ h1, h2{
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.product {
+.cta {
     background: #ca1010;
     color: #fff;
     font-size: 1em;
@@ -61,10 +61,13 @@ h1, h2{
 }
 
 .cta-small {
-    padding: 8px 30px;
+    padding: 8px 20px;
     font-size: 0.8rem;
-    grid-row: 2;
     grid-column: 2;
+    grid-row: 2;
+    min-width: 51.2333px;
+    text-align: center;
+    margin-top: 5px;
 }
 
 .sale {
@@ -174,6 +177,8 @@ footer {
 .featured-products h3, 
 .featured-products p {
     grid-column: 1;
+    font-size: 0.9em;
+    margin: 5px;
 }
 
 .featured-products img {
@@ -191,6 +196,24 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.products img {
+    width: 100%;
+    grid-column: -1/1;
+}
+
+.products h2, 
+.products p {
+    grid-column: 1;
+    font-size: 1.2em;
+    margin: 10px 70px 5px 5px;
 }
 /* Contact page */
 .contact {

@@ -217,6 +217,14 @@ footer {
     margin: 5px;
     text-align: left;
 }
+
+.product-sale {
+    display: flex;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
 /* Contact page */
 .contact {
     max-width: 1000px;

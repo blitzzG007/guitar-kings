@@ -309,9 +309,18 @@ input[type="submit"] {
 
 /*Tablets*/
 
+/*Smartphones*/
+@media screen and (max-width: 480px) {
 
-/*Mobile phones*/
-@media only screen and (max-width: 480px) {
+    /*Welcome page*/
+
+    /*Guitars page*/
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Contact page*/
+
 
     /*product page*/
     .product-specific {

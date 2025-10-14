@@ -4,8 +4,11 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -301,4 +304,18 @@ input[type="submit"] {
     display: flex;
     gap: 10px;
     margin: 5px;
+}
+
+
+/*Tablets*/
+
+
+/*Mobile phones*/
+@media only screen and (max-width: 480px) {
+
+    /*product page*/
+    .product-specific {
+        display: flex;
+        flex-direction: column;
+    }
 }

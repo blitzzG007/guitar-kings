@@ -310,9 +310,20 @@ input[type="submit"] {
 /*Tablets*/
 
 /*Smartphones*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
     /*Welcome page*/
+    .reviews-content {
+        flex-direction: column;
+    }
+
+    .featured-list h2{
+        text-align: center;
+    }
+
+    .featured {
+        grid-template-columns: 1fr;
+    }
 
     /*Guitars page*/
     .product-list {

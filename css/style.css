@@ -310,7 +310,7 @@ input[type="submit"] {
 /*Tablets*/
 
 /*Smartphones*/
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
     /*Welcome page*/
     .reviews-content {

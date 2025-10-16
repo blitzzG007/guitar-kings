@@ -13,7 +13,9 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .logo {
@@ -25,9 +27,36 @@ header {
 }
 
 /* Links*/
+nav {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 47px;
+    right: 0px;
+    background: #202020;
+    z-index: 1000;
+}
+
+#menu-check {
+    display: none;
+}
+ nav ul {
+    padding: 0px 10px;
+ }
+
 nav li {
-    display: inline-block;
-    padding: 10px;
+    display: block;
+    list-style: none;
+    padding: 20px;
+}
+
+#menu-check:checked ~ nav {
+    display: block;
+}
+
+.menu {
+    margin-right: 15px;
+    font-size: 1.5rem;
 }
 
 /* Links*/
@@ -59,7 +88,7 @@ h1, h2{
     font-size: 1em;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 80px;
+    padding: 10px 40px;
     border-radius: 5px;
 }
 
@@ -95,7 +124,7 @@ footer {
 .welcome {
     background: url(../images/guitarkings-img.jpg) no-repeat;
     background-size: cover;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: bottom;
     min-height: 70vh;
     position: relative;
@@ -103,8 +132,9 @@ footer {
 
 .welcome_content {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
 }
 
@@ -116,11 +146,16 @@ footer {
 .reviews-content {
     max-width: 1000px;
     display: flex;
+    flex-direction: column;
 }
 
 .selling-points >*,
 .reviews-content >* {
     flex: 1;
+}
+
+.selling-points h2 {
+    text-align: center;
 }
 
 .selling-points_image{
@@ -153,7 +188,7 @@ footer {
 }
 
 .reviews-content div {
-    margin: 50px;
+    margin: 20px;
 }
 
 .reviews-content span {
@@ -167,7 +202,7 @@ footer {
 
 .featured {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -198,7 +233,7 @@ footer {
 }
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -252,11 +287,13 @@ textarea {
 
 textarea {
     height: 65%;
+    min-height: 100px;
 }
 
 .form-wrapper {
     display: flex;
     text-align: start;
+    flex-direction: column;
 }
 
 .form-wrapper >* {
@@ -275,7 +312,8 @@ input[type="submit"] {
 .product-specific {
     display: flex;
     max-width: 1000px;
-    margin: 50px auto;
+    margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .product-specific >* {
@@ -306,36 +344,96 @@ input[type="submit"] {
     margin: 5px;
 }
 
-
 /*Tablets*/
-
-/*Smartphones*/
-@media (max-width: 600px) {
-
-    /*Welcome page*/
-    .reviews-content {
-        flex-direction: column;
-    }
-
-    .featured-list h2{
-        text-align: center;
-    }
-
+@media (min-width: 600px) {
     .featured {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /*Guitars page*/
+    .welcome_content {
+        transform: translateX(-75%);
+    }
+
+    header {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    nav {
+        display: block;
+        background: none;
+        position: static;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+
     .product-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /*Contact page*/
-
-
-    /*product page*/
     .product-specific {
-        display: flex;
-        flex-direction: column;
+        margin: 50px auto;
+        flex-direction: column-reverse;
+    }
+
+    .product-details {
+        margin-bottom: 50px;
+    }
+
+    .form-wrapper {
+        flex-direction: row
+    }
+
+    .selling-points h2 {
+        text-align: left;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 800px) {
+    .featured {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .selling-points,
+    .reviews-content {
+        flex-direction: row;
+    }
+
+    .reviews-content div {
+        margin: 50px;
+    }
+
+    .welcome {
+        background-position-x: right;
+    }
+
+    .welcome_content {
+        top: 100px;
+        left: 100px;
+        transform: none;
+    }
+
+    .cta {
+        padding: 10px 80px;
+    }
+
+    .cta-small {
+        padding: 8px 20px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-specific {
+        margin: 50px auto;
+        flex-direction: row;
     }
 }

@@ -1,0 +1,95 @@
+
+/*Tablets*/
+@media (min-width: 600px) {
+    .featured {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome_content {
+        transform: translateX(-75%);
+    }
+
+    header {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    nav {
+        display: block;
+        background: none;
+        position: static;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-specific {
+        margin: 50px auto;
+        flex-direction: column-reverse;
+    }
+
+    .product-details {
+        margin-bottom: 50px;
+    }
+
+    .form-wrapper {
+        flex-direction: row
+    }
+
+    .selling-points h2 {
+        text-align: left;
+    }
+}
+
+
+/*Desktop*/
+@media (min-width: 800px) {
+    .featured {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .selling-points,
+    .reviews-content {
+        flex-direction: row;
+    }
+
+    .reviews-content div {
+        margin: 50px;
+    }
+
+    .welcome {
+        background-position-x: right;
+    }
+
+    .welcome_content {
+        top: 100px;
+        left: 100px;
+        transform: none;
+    }
+
+    .cta {
+        padding: 10px 80px;
+    }
+
+    .cta-small {
+        padding: 8px 20px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-specific {
+        margin: 50px auto;
+        flex-direction: row;
+    }
+}

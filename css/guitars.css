@@ -1,0 +1,38 @@
+/* Guitars page */
+.guitars {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.products img {
+    width: 100%;
+    grid-column: -1/1;
+}
+
+.products h2, 
+.products p {
+    grid-column: 1;
+    font-size: 1.2em;
+    margin: 5px;
+    text-align: left;
+}
+
+.product-sale {
+    display: flex;
+}
+
+.old-price {
+    text-decoration: line-through;
+}

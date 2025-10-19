@@ -1,0 +1,35 @@
+/*Product page: Adirondack Red*/
+.product-specific {
+    display: flex;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.product-specific >* {
+    flex: 1;
+}
+
+.product-details {
+   padding: 0 30px;
+}
+
+.product-details a {
+    display: block;
+    width: 95.467px;
+    margin: auto;
+}
+
+.product-price {
+    font-size: 1.5em;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-images-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}

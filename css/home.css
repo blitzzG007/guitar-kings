@@ -1,0 +1,104 @@
+/* Home page */
+.welcome {
+    background: url(../images/guitarkings-img.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 70vh;
+    position: relative;
+}
+
+.welcome_content {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.selling-points {
+    margin: 50px auto;
+}
+
+.selling-points,
+.reviews-content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selling-points >*,
+.reviews-content >* {
+    flex: 1;
+}
+
+.selling-points h2 {
+    text-align: center;
+}
+
+.selling-points_image{
+    border-radius: 100px;
+    width: 100%;
+}
+
+.reviews {
+    background: #e7e7e7;
+    text-align: center;
+    padding: 50px;
+}
+
+.reviews h3 {
+    font-family: "Boots and Spurs", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.reviews-content {
+    text-align: center;
+    margin: auto;
+    gap: 50px;
+}
+
+.review-image {
+    width: 100px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -20px;
+}
+
+.reviews-content div {
+    margin: 20px;
+}
+
+.reviews-content span {
+    display: block;
+}
+
+.featured-list {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.featured-products {
+    background: #fbfbfb;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.featured-products h3, 
+.featured-products p {
+    grid-column: 1;
+    font-size: 0.9em;
+    margin: 5px;
+}
+
+.featured-products img {
+    width: 100%;
+    grid-column: -1/1;
+}

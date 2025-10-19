@@ -1,0 +1,65 @@
+/*Header links*/
+nav {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 47px;
+    right: 0px;
+    background: var(--header-footer);
+    z-index: 1000;
+}
+
+#menu-check {
+    display: none;
+}
+ nav ul {
+    padding: 0px 10px;
+ }
+
+nav li {
+    display: block;
+    list-style: none;
+    padding: 20px;
+}
+
+#menu-check:checked ~ nav {
+    display: block;
+}
+
+.menu {
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+nav .links {
+    font-size: 17.5px;
+    font-weight: 550;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links.home, .links.guitars, .links.contact {
+    text-decoration: underline;
+}
+
+
+/*Content links*/
+.cta {
+    background: #ca1010;
+    color: var(--text-color);
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.cta-small {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 51.2333px;
+    text-align: center;
+    margin-top: 5px;
+}

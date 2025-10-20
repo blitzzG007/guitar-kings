@@ -4,6 +4,23 @@
     margin: 50px auto;
     text-align: center;
 }
+
+.guitars .products {
+    animation: welcome 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .product-list {
     display: grid;
     grid-template-columns: 1fr;

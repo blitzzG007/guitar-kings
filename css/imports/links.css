@@ -52,6 +52,26 @@ nav .links {
     text-transform: uppercase;
     padding: 10px 40px;
     border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.cta::before {
+    content: "";
+    padding: 10px 6px;
+    background: #fff;
+    top: -16px;
+    left: -35px;
+    height: 50px;
+    transform: rotate(40deg);
+    position: absolute;
+    transition: left ease-in-out 1s;
+    opacity: 0.3;
+}
+
+.cta:hover::before {
+    left: 110%;
 }
 
 .cta-small {
